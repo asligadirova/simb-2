@@ -1,0 +1,51 @@
+@import "./mixins";
+.banner {
+
+    background-image: url(../images/cover.jpg);
+    background-color: rgba(0, 0, 0, 0.838);
+    height: 100vh;
+    filter: brightness(75%);
+    width: 100%;
+    position: relative;
+    background-size: cover;
+    background-position: right center;
+    padding: 230px 120px;
+  
+    @include mobileversion {
+      padding: 250px 0px;
+      background-position: top center;
+    }
+    .bannerdesc {
+      @include mobileversion {
+        padding: 78px 0px;
+      }
+    }
+    h1 {
+      color: white;
+      font-weight: bold;
+      filter: brightness(100%);
+      z-index: 3;
+      @include mobileversion {
+        font-size: 30px !important;
+        letter-spacing: 2px;
+      }
+    }
+    p {
+      color: white;
+      margin: 30px 0;
+    }
+    .btn {
+      position: absolute;
+  
+      color: #ffffff;
+      margin: 15px;
+      padding-top: 200px;
+      padding-right: 5px;
+      display: flex;
+      border: none;
+      text-align: center;
+      @include mobileversion {
+        display: none;
+      }
+    }
+  }

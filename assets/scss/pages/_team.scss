@@ -1,0 +1,43 @@
+.team {
+    padding-left: 200px;
+    margin: 75px 0;
+    width: 100%;
+    &__container {
+      padding-left: 250px;
+    }
+    .profile {
+      margin-top: 25px;
+      width: 220px;
+  
+      .img-box {
+        background-image: url(https://www.simbrella.com/site/templates/img/figure_green_bg.png);
+        border-radius: 3px;
+        display: block;
+        position: relative;
+        width: 200px;
+      }
+  
+      h3 {
+        font-weight: bold;
+        font-size: 20px;
+        margin-top: 10px;
+      }
+      p {
+        color: gray;
+      }
+    }
+    h1 {
+      font-weight: bold;
+      letter-spacing: 2px;
+      color: rgb(44, 44, 136);
+    }
+    @include responsivebig {
+      display: none;
+    }
+  }
+  .team2 {
+    width: 100%;
+    @include responsivebig {
+      display: none;
+    }
+  }
